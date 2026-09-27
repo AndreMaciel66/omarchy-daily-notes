@@ -34,13 +34,13 @@ No `sudo` or `pkexec` is required.
 ## Install
 
 ```bash
-omarchy plugin add https://github.com/andremaciel66/omarchy-daily-notes.git --enable
+omarchy plugin add https://github.com/AndreMaciel66/omarchy-daily-notes.git --enable
 ```
 
 Or manually:
 
 ```bash
-git clone https://github.com/andremaciel66/omarchy-daily-notes.git \
+git clone https://github.com/AndreMaciel66/omarchy-daily-notes.git \
   ~/.config/omarchy/plugins/thecraftlab.daily-notes
 omarchy plugin enable thecraftlab.daily-notes right
 ```
