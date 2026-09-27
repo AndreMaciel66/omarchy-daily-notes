@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "thecraftlab.daily-notes",
+  "name": "Daily Notes",
+  "version": "0.1.0",
+  "author": "thecraftlab",
+  "license": "MIT",
+  "description": "Lista de notas diárias em markdown, criadas com a data de hoje e abertas em um Neovim flutuante.",
+  "kinds": [
+    "bar-widget"
+  ],
+  "entryPoints": {
+    "barWidget": "Panel.qml"
+  },
+  "barWidget": {
+    "displayName": "Daily Notes",
+    "description": "Cria, renomeia e remove notas diárias; abre cada nota em um Neovim flutuante.",
+    "category": "Productivity",
+    "allowMultiple": false,
+    "defaultSection": "right",
+    "defaults": {
+      "notesDir": "~/Documents/daily",
+      "appId": "TUI.float",
+      "nvimAppName": "nvim-daily"
+    },
+    "schema": [
+      {
+        "key": "notesDir",
+        "type": "string",
+        "label": "Pasta das notas",
+        "defaultValue": "~/Documents/daily",
+        "description": "Diretório onde as notas .md são guardadas."
+      },
+      {
+        "key": "appId",
+        "type": "string",
+        "label": "App-id da janela do editor",
+        "defaultValue": "TUI.float",
+        "description": "TUI.float já abre flutuante no Omarchy. Use um id próprio para aplicar regras de janela personalizadas."
+      },
+      {
+        "key": "nvimAppName",
+        "type": "string",
+        "label": "NVIM_APPNAME do editor",
+        "defaultValue": "nvim-daily",
+        "description": "Config do Neovim usada nas notas (~/.config/<nome>). Vazio ou 'nvim' usa a config padrão."
+      }
+    ]
+  }
+}
